@@ -69,14 +69,127 @@ function invertirCad() {
   debugger
   const frase = document.getElementById("frase").value;
   const respuesta = document.getElementById("resp");
-  lon = num.length - 1
+  lon = frase.length - 1
+  msg=""
 
-  // Bucle para invertir la cadena agregando cada dígito desde el final al inicio
   while (lon >= 0) {
-    msg = msg + num[lon]
+    msg  += frase[lon]
     lon = lon - 1
   }
 
-  // Muestra el número invertido en el campo "resp"
-  resp.innerHTML = msg
+  respuesta.innerHTML = msg
+}
+
+function contVoc() {
+  debugger
+  const frase = document.getElementById("frase").value;
+  const respuesta = document.getElementById("resp");
+  lon = frase.length
+
+  let cont=0
+  let acum=0
+  let letra=""
+
+  while (cont<lon){
+    letra=frase[cont]
+
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
+      acum=acum+1
+    }
+    cont=cont+1
+  }
+
+
+  respuesta.innerHTML = `El numero de vocales es : ${acum}`
+}
+function contLet() {
+  debugger
+  const frase = document.getElementById("frase").value;
+  const respuesta = document.getElementById("resp");
+  lon = frase.length
+
+  let cont=0
+  let acum=0
+  let letra=""
+
+  while (cont<lon){
+    letra=frase[cont]
+
+    if (letra >="a" && letra<="z" || letra >="A" && letra<="Z"){
+      acum=acum+1
+    }
+    cont=cont+1
+  }
+
+
+  respuesta.innerHTML = `El numero de letras es : ${acum}`
+}
+
+function contDig() {
+  debugger
+  const frase = document.getElementById("frase").value;
+  const respuesta = document.getElementById("resp");
+  lon = frase.length
+
+  let cont=0
+  let acum=0
+  let num=0
+
+  while (cont<lon){
+    num=frase[cont]
+
+    if (num>0 && num<9){
+      acum=acum+1
+    }
+    cont=cont+1
+  }
+
+
+  respuesta.innerHTML = `El numero de Digitos en este texto es : ${acum}`
+}
+
+function contSig() {
+  debugger
+  const texto = document.getElementById("texto").value;
+  const respuesta = document.getElementById("resp");
+  lon = texto.length
+
+  let cont=0
+  let acum=0
+  let letra=""
+
+  while (cont<lon){
+    letra=texto[cont]
+
+    if (letra === '.' || letra == ',' || letra == ';' || letra == ':' || letra === '...' || letra == '¿' || letra == '?' || letra == '¡' || letra == '!' || letra == '_'){
+      acum=acum+1
+    }
+    cont=cont+1
+  }
+
+
+  respuesta.innerHTML = `El numero de signos de puntuación es : ${acum}`
+}
+
+function conPalabra() {
+  debugger
+  const texto = document.getElementById("texto").value.trim();
+  const respuesta = document.getElementById("resp");
+  lon = texto.length
+
+  let cont=0
+  let acum=1
+  let palabra=""
+
+  while (cont<lon){
+    palabra=texto[cont]
+
+    if (palabra ==' '){
+      acum=acum+1
+    }
+    cont=cont+1
+  }
+
+
+  respuesta.innerHTML = `El numero de palabras es : ${acum}`
 }

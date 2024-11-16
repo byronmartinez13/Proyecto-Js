@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invertir frase </title>
+  <title>Contar Palabras </title>
   <style>
     /* Estilos generales */
     * {
@@ -105,12 +105,12 @@
 </head>
 <body>
   <main>
-    <h1>Invertir palabras</h1>
+    <h1>Contar Palabras</h1>
     <form>
       <!-- Campo para ingresar la palabra -->
       <div>
-        <label >Palabra o Frase</label>
-        <input type="text" id="frase" placeholder="Ingresa una palabra o frase">
+        <label >Texto (separdo por espacios)</label>
+        <input type="text" id="texto" placeholder="Ingresa una palabra o frase">
       </div>
 
       <!-- Área para mostrar la respuesta -->
@@ -120,7 +120,7 @@
       </div>
 
       <!-- Botón para generar el espaciado -->
-      <button type="button" onclick="invertirCad()">invertir </button>
+      <button type="button" onclick="conPalabra()">Mostrar</button>
       <button class="btn btn-danger text-white mt-3" type="button" onclick="window.location.href='ejercicios_Cadenas.html';">Regresar</button>
     </form>
   </main>
