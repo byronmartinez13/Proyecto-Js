@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promedio de Números Mayores a un Valor</title>
+  <title>Suma de Arreglos</title>
   <style>
     /* Estilos generales */
     * {
@@ -105,18 +105,20 @@
 </head>
 <body>
   <main>
-    <h1>Promedio de Números Mayores a un Valor</h1>
+    <h1>Suma de arreglos</h1>
     <form>
       <!-- Campo para ingresar los números -->
       <div>
-        <label for="numeros">Números (separados por punto y coma)</label>
-        <input type="text" id="numeros" placeholder="Ej: 12; 5; 8; 20; 15">
+        <label for="Arreglos1">Arreglo1
+           ( Números separados por punto y coma)</label>
+        <input type="text" id="arreglos1" placeholder="Ej: 12; 5; 8; 20; 15">
       </div>
 
       <!-- Campo para ingresar el límite -->
       <div>
-        <label for="limite">Valor Límite</label>
-        <input type="text" id="limite" placeholder="Ej: 10">
+        <label for="arreglos2">Arreglo2
+           ( Números separados por punto y coma)</label>
+        <input type="text" id="arreglos2" placeholder="Ej: 10; 7; 6; 22; 13">
       </div>
 
       <!-- Área para mostrar la respuesta -->
@@ -126,7 +128,7 @@
       </div>
 
       <!-- Botón para calcular el promedio -->
-      <button type="button" onclick="calcularPromedio()">Calcular</button>
+      <button type="button" onclick="sumArreglos()">Calcular</button>
       <button class="btn btn-danger text-white mt-3" type="button" onclick="window.location.href='arreglos.html';">Regresar</button>
     </form>
   </main>

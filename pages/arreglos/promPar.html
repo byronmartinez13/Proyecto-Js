@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promedio de Números Mayores a un Valor</title>
+  <title>Promedio de Números Pares</title>
   <style>
     /* Estilos generales */
     * {
@@ -105,28 +105,22 @@
 </head>
 <body>
   <main>
-    <h1>Promedio de Números Mayores a un Valor</h1>
+    <h1>Promedio de Números Pares</h1>
     <form>
       <!-- Campo para ingresar los números -->
       <div>
         <label for="numeros">Números (separados por punto y coma)</label>
-        <input type="text" id="numeros" placeholder="Ej: 12; 5; 8; 20; 15">
-      </div>
-
-      <!-- Campo para ingresar el límite -->
-      <div>
-        <label for="limite">Valor Límite</label>
-        <input type="text" id="limite" placeholder="Ej: 10">
+        <input type="text" id="numeros" placeholder="Ej: 10; 8.5; 8; 7.0; 9">
       </div>
 
       <!-- Área para mostrar la respuesta -->
       <div>
         <label for="resp">Respuesta</label>
-        <textarea id="resp" readonly placeholder="Aquí va el resultado..."></textarea>
+        <textarea id="resp" readonly placeholder="Aquí se presentará la respuesta"></textarea>
       </div>
 
       <!-- Botón para calcular el promedio -->
-      <button type="button" onclick="calcularPromedio()">Calcular</button>
+      <button type="button" onclick="calcuPromPar()">Calcular</button>
       <button class="btn btn-danger text-white mt-3" type="button" onclick="window.location.href='arreglos.html';">Regresar</button>
     </form>
   </main>

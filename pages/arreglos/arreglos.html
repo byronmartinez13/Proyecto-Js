@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de Arreglos</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Contenedor de las tarjetas */
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Estilos de las tarjetas */
+      .card {
+        flex: 1 1 calc(20% - 20px); /* Ajuste para 5 tarjetas por fila */
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+        min-height: 180px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+
+      .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicios de Arreglos</h1>
+    <div class="grid">
+      <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
+      <!-- Fila 1 -->
+      <div class="card">
+        <h3>Promedio de numeros</h3>
+        <p>Calcular el promedio de los números mayores a un valor límite en un arreglo.</p>
+        <a href="./mayor.html"
+          >Ver Ejercicio</a >
+      </div>
+      <div class="card">
+        <h3>Genera números</h3>
+        <p>Genera 10 numero aleatoriamente de el 0 al 100</p>
+        <a href="./numGenerados.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Calcula Promedios</h3>
+        <p>Calcula tus promedios, ingresa tus calficaciones y revisa tu promedio</p>
+        <a href="promedioCalificaciones.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Número Máximo</h3>
+        <p>
+          Ingresa los némeros que desees y se mostrará el numero mayor como respuesta.
+        </p>
+        <a href="numMax.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Número Minimo</h3>
+        <p>
+          Ingresa los némeros que desees y se mostrará el numero mayor como respuesta.
+        </p>
+        <a href="numMin.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Sumar Dígitos</h3>
+        <p>
+         Ingresa un número y se mostrará la sma de sus digitos.
+        </p>
+        <a href="suma.html">Ver Ejercicio</a>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="card">
+        <h3>Promedio de pares</h3>
+        <p>Ingresa 10 números y se realizará un promedio solo de los números pares.</p>
+        <a href="promPar.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Suma de Positivos y Negativos</h3>
+        <p>Ingresa 10 numeros entre positivos y negativos y los sumarán por separado.</p>
+        <a href="posNegSuma.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>cuadrado de números</h3>
+        <p>Ingresa cualquier numero para saber cual es su cuadrdado.</p>
+        <a href="Cuadrado.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Sumar 2 Arreglos</h3>
+        <p>Ingresa dos Arreglos de igual dimension, y los sumaremos por posiciones.</p>
+        <a href="sumaArreglos.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <button class="btn btn-danger text-white mt-3" type="button" onclick="window.history.back();">Regresar</button>
+      </div>
+      
+    </div>
+  </body>
+</html>
