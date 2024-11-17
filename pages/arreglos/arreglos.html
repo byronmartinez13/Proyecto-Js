@@ -72,9 +72,30 @@
       .card a:hover {
         background-color: #0056b3;
       }
+
+      .regresar-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s;
+      }
+
+      .regresar-btn:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
+    <button class="regresar-btn" type="button" onclick="window.history.back();">Regresar</button>
     <h1>Ejercicios de Arreglos</h1>
     <div class="grid">
       <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
@@ -138,10 +159,7 @@
         <p>Ingresa dos Arreglos de igual dimension, y los sumaremos por posiciones.</p>
         <a href="sumaArreglos.html">Ver Ejercicio</a>
       </div>
-      <div class="card">
-        <button class="btn btn-danger text-white mt-3" type="button" onclick="window.history.back();">Regresar</button>
-      </div>
-      
+        
     </div>
   </body>
 </html>

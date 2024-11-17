@@ -72,9 +72,34 @@
       .card a:hover {
         background-color: #0056b3;
       }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+
+      .regresar-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s;
+      }
+
+      .regresar-btn:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
+    <button class="regresar-btn" type="button" onclick="window.history.back();">Regresar</button>
     <h1>Ejercicios de Cadenas</h1>
     <div class="grid">
       <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
@@ -138,7 +163,7 @@
         <p>Ingresa un texto para averiguar cuantas palabras tiene.</p>
         <a href="contar_Palabras.html">Ver Ejercicio</a>
       </div>
-      <button class="btn btn-danger text-white mt-3" type="button" onclick="window.history.back();">Regresar</button>
+      
 
       <!-- Fila 3 - Añadir más tarjetas hasta completar 8 filas -->
       <!-- Continua este mismo patrón hasta completar 40 tarjetas -->
