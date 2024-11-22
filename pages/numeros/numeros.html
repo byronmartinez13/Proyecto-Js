@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de numeros</title>
+    <style>
+      /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      /* Contenedor de las tarjetas */
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Estilos de las tarjetas */
+      .card {
+        flex: 1 1 calc(20% - 20px); /* Ajuste para 5 tarjetas por fila */
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+        min-height: 180px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+
+      .card p {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+
+      .regresar-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s;
+      }
+
+      .regresar-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="regresar-btn" type="button" onclick="window.history.back();">Regresar</button>
+    <h1>Ejercicios de Números</h1>
+    <div class="grid">
+      <!-- 40 Tarjetas (5 por fila, 8 filas en total) -->
+      <!-- Fila 1 -->
+      <div class="card">
+        <h3>Contar Digitos</h3>
+        <p>Contar cunatos digitos tiene un número ingresado por un usuario.</p>
+        <a href="./contardigitos.html"
+          >Ver Ejercicio</a >
+      </div>
+      <div class="card">
+        <h3>Divisibles</h3>
+        <p>Numeros divisibles para 3 y 7 a la vez del 1 al 50</p>
+        <a href="./divisibles.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Divisores</h3>
+        <p>Numeros divisores de un Numero ingresado por el usuario</p>
+        <a href="divisores.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Divisores del 1 al 20</h3>
+        <p>
+          SE presentan los numeros divisores entre el 1 y el 20 de un número ingresado por el usuario.
+        </p>
+        <a href="numMax.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Número Minimo</h3>
+        <p>
+          Ingresa los némeros que desees y se mostrará el numero mayor como respuesta.
+        </p>
+        <a href="divisores1al20.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Factorial</h3>
+        <p>
+         Se presenta el factorial de el numero ingresado.
+        </p>
+        <a href="factorial.html">Ver Ejercicio</a>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="card">
+        <h3>Fibonacci</h3>
+        <p>Se presenta la secuenncia Fibonacci hasta la posicion que indique el usuario.</p>
+        <a href="fibonacci.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>impares</h3>
+        <p>SE presentan los impares del 1 al 50.</p>
+        <a href="impares.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Multiplicacion</h3>
+        <p>Se presenta el resultado de la multipliacion secuencial de los numeros del 1 al 10.</p>
+        <a href="multip.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Número invertido</h3>
+        <p>Se presenta de forma invertida el nunmero ingresado .</p>
+        <a href="numeroINvertido.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Numeros perfevtos</h3>
+        <p>SE presenta si el nunmero ingresado es un numero perfecto o no.</p>
+        <a href="numeroPerfecto.html">Ver Ejercicio</a>
+      </div>   <div class="card">
+        <h3>Numeros primos</h3>
+        <p>SE presenta si el nunmero ingresado es un numero primo o no.</p>
+        <a href="primo.html">Ver Ejercicio</a>
+      </div> 
+        <div class="card">
+        <h3>Suma del 1 al 100</h3>
+        <p>Se presenta el resultado de la suma de los numeros del 1 al 100.</p>
+        <a href="suma_1_al_100.html">Ver Ejercicio</a>
+      </div>  
+       <div class="card">
+        <h3>Sumar Par</h3>
+        <p>SE presenta la suma de los numeros pares hasta el numero ingresado por ek usuario.</p>
+        <a href="Sumapar.html">Ver Ejercicio</a>
+      </div> 
+        <div class="card">
+        <h3>Tabla de multiplicar</h3>
+        <p>Se crea una tabla de multiplicar con el numero que desee el usuario.</p>
+        <a href="tablamult.html">Ver Ejercicio</a>
+      </div>
+      <div class="card">
+        <h3>Triangulo</h3>
+        <p>Se crea untriangulo de acteriscos.</p>
+        <a href="tablamult.html">Ver Ejercicio</a>
+      </div>
+        
+    </div>
+  </body>
+</html>

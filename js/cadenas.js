@@ -193,3 +193,4 @@ function conPalabra() {
 
   respuesta.innerHTML = `El numero de palabras es : ${acum}`
 }
+
